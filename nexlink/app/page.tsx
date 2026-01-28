@@ -4,7 +4,7 @@ import Footer from "./sections/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="flex flex-col min-h-screen items-center bg-white text-black justify-center">
       <Hero />
       <About />
       <Footer />
