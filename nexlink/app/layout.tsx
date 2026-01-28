@@ -1,17 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
 import PrimaryHeader from "@/components/header/PrimaryHeader/index";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { inter, caladea, calistoga } from "./fonts";
 
 export const metadata: Metadata = {
   title: "NexLink",
@@ -26,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${calistoga.variable} ${caladea.variable} antialiased`}
       >
         <PrimaryHeader />
         {children}
