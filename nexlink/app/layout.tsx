@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import PrimaryHeader from "@/components/header/PrimaryHeader/index";
 import { inter, caladea, calistoga } from "./fonts";
+import PrimaryHeader from "@/components/header/PrimaryHeader";
 
 export const metadata: Metadata = {
   title: "NexLink",
